@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from money_converter import converter, converted_currency
+from money_converter import converter, convert_currency
 
 
 app = Flask(__name__)
@@ -21,7 +21,7 @@ def api_converter():
                     "amount": amount,
                     "currency": input_currency
                 },
-                "output": converted_currency(amount, input_currency, output_currency)
+                "output": convert_currency(amount, input_currency, output_currency)
             }
     return jsonify(data)
 
