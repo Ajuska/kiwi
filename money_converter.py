@@ -1,12 +1,11 @@
 import click
 import json
-from currency_converter import CurrencyConverter
+from currency_converter import CurrencyConverter # better library is maybe forex-python==1.1
 from collections import OrderedDict
 
 ### Load the packaged data (might not be up to date). ###
-## For up to date data insert between parenthesis the latest data source ##
-c = CurrencyConverter('http://www.ecb.int/stats/eurofxref/eurofxref-hist.zip',
-                        fallback_on_wrong_date=True)
+## For up to date data insert the latest data source between parenthesis ##
+c = CurrencyConverter('./eurofxref-hist.csv', fallback_on_wrong_date=True)
 
 def converted_currency(amount, input_currency, output_currency):
     if output_currency != None:
