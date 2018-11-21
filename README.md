@@ -4,10 +4,10 @@ The project is based on [Kiwi practical task](https://gist.github.com/MichalCab/
 
 Please install all dependencies in requirement.txt file to run this project.
 
-# CLI
+### CLI
 
 To run the Command Line Interface type:
-`python3 money_converter.py --amount 100.0 --input_currency EUR --output_currency CZK`
+`python3 currency_converter.py --amount 100.0 --input_currency EUR --output_currency CZK`
 
 The response will be:
 ```
@@ -22,7 +22,7 @@ The response will be:
 }
 ```
 
-# API
+### API
 
 To run the Application Programming Interface type in the command line:
 `python3 api.py`
