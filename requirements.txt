@@ -6,7 +6,7 @@ Flask==1.0.2
 forex-python==1.1
 idna==2.7
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.1.0
 requests==2.20.1
 simplejson==3.16.0
